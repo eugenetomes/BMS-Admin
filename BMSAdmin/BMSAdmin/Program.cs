@@ -1,5 +1,5 @@
-using BMSAdmin.Client.Pages;
 using BMSAdmin.Components;
+using BMSAdmin.Services;
 using Microsoft.FluentUI.AspNetCore.Components;
 
 namespace BMSAdmin;
@@ -14,6 +14,9 @@ public class Program
             .AddInteractiveServerComponents()
             .AddInteractiveWebAssemblyComponents();
         builder.Services.AddFluentUIComponents();
+
+        //Services
+        builder.Services.AddSingleton<INavLinkService, NavLinkService>();
 
         var app = builder.Build();
 
