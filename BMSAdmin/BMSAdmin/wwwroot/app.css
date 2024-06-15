@@ -1,7 +1,27 @@
 @import '/_content/Microsoft.FluentUI.AspNetCore.Components/css/reboot.css';
 
+
+
+:root {
+    --accent-fill-rest: green !important;
+    --dusk-calm: #870A3C;
+    --lines-line-dark: #CAC7C7;
+    --backgrounds-bg-light: #F9F8F8;
+    --backgrounds-bg-mid: #F4F3F3;
+    --backgrounds-bg-dark: #EEEDED;
+}
+
+header {
+    background-color: white !important;
+    color: var(--dusk-calm) !important;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: var(--lines-line-dark);
+    font-family: "Source Sans 3", sans-serif;
+}
+
 body {
-    --body-font: "Segoe UI Variable", "Segoe UI", sans-serif;
+    --body-font: "Source Sans 3", sans-serif;
     font-family: var(--body-font);
     font-size: var(--type-ramp-base-font-size);
     line-height: var(--type-ramp-base-line-height);
@@ -35,10 +55,13 @@ body {
 }
 
 footer {
-    background: var(--neutral-layer-4);
+    background-color: var(--backgrounds-bg-dark) !important;
     color: var(--neutral-foreground-rest);
     align-items: center;
     padding: 10px 10px;
+    border-top: solid;
+    border-top-width: thin;
+    border-top-color: var(--lines-line-dark);
 }
 
     footer a {
